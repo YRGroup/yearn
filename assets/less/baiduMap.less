@@ -1,0 +1,70 @@
+/* contactus */
+@import "../est/all.less";
+@import "./variable.less";
+.yearn_contactus {
+  .row{
+    height: 400px;
+  }
+  .contactus_left {
+    font-size: 16px;
+    line-height: 25px;
+    background: @color-theme-s;
+    color: #fff;
+    height: 100%;
+    padding-left: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .display(flex);
+    .box-sizing(border-box);
+    .flex-wrap(nowrap);
+    .flex-direction(column);
+    .justify-content(space-evenly);
+    .line {
+      width: 190px;
+      height: 1px;
+      background: #fff;
+      margin-bottom: 20PX;
+    }
+    .phone{
+      .font-size-rem(@font-size-xxxl);
+      margin-bottom: 16px;
+    }
+    .yearn_title,
+    .yearn_subtitle {
+      color: #fff;
+      text-align: left;
+    }
+    .yearn_subtitle {
+      margin-bottom: 20px;
+    }
+  }
+  .contactus_right {
+    background: #ddd;
+    height: 400px;
+  }
+  @media (max-width: 768px) {
+    height: auto;
+    .contactus_content {
+      .flex-wrap(wrap);
+      .flex-direction(column);
+    }
+    .contactus_left {
+      height: auto;
+      width: 100%;
+      padding-left: 15px;
+      padding-top: 30px;
+      .yearn_title,
+      .yearn_subtitle {
+        color: #fff;
+        text-align: center;
+      }
+      .line {
+        display: none;
+      }
+    }
+    .contactus_right {
+      height: 400px;
+      width: 100%;
+    }
+  }
+}

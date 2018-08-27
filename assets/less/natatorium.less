@@ -1,0 +1,578 @@
+@import "../est/all.less";
+@import "./variable.less";
+
+.main_bg {
+  background: url('../images/mainbg.jpg') repeat;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: none;
+  .border-radius(50%);
+  .font-size-rem(@font-size-xxxl);
+}
+
+/* banner */
+
+.banner {
+  overflow: hidden;
+  position: relative;
+  .border-radius(100%,
+  0 0 60% 60%);
+  img {
+    width: 100%;
+  }
+  .content {
+    width: 40%;
+    position: absolute;
+    padding: 32px;
+    color: #fff; // color: @brand-primary;
+    line-height: 27px;
+    right: 20%;
+    bottom: 15%;
+    .font-size-rem(@font-size-m);
+    .rgba-background(rgba(38, 112, 183, 0.7));
+    .box-sizing(border-box);
+    span{
+      // float: right;
+      display: block;
+      text-align: right;
+    }
+  }
+  @media(max-width:768px) {
+    .border-radius(0 0 30px 30px);
+    .content {
+      position: relative;
+      right: 0;
+      top: 0;
+      padding: 20px 20px;
+      width: 100%;
+    }
+  }
+}
+
+/* classes */
+
+.classes {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  @media(max-width: 768px) {
+    .animate_card {
+      width: 100%;
+      margin: 10px auto;
+      .border-radius(10px);
+    }
+  }
+}
+
+.animate_card {
+  height: 340px;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+  .transition(box-shadow 0.3s);
+  * {
+    .transition(all .3s);
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .card_thumb {
+    height: 270px;
+    overflow: hidden;
+    background: #000;
+  }
+  .card_body {
+    padding: 20px 20px;
+    position: absolute;
+    width: 100%;
+    height: 220px;
+    top: 270px;
+    overflow: hidden;
+    background: #fff;
+    .box-sizing(border-box);
+  }
+  .card_title {
+    color: #333;
+    line-height: 35px;
+    text-align: center;
+    margin: 0;
+    .font-size-rem(@font-size-m);
+  }
+  .card_description {
+    color: #aaa;
+    line-height: 25px;
+    opacity: 0;
+    transform: translateY(20px);
+    overflow: hidden;
+    word-break: break-all;
+    white-space: pre-wrap;
+    .font-size-rem(@font-size-s);
+    .transition(all .3s);
+    .transition-delay(0.1s);
+  }
+  &:hover {
+    .box-shadow(0 0 50px rgba(0, 0, 0, 0.3));
+    img {
+      .transform(scale(1.2));
+      opacity: .6;
+    }
+    .card_body {
+      top: 100px;
+    }
+    .card_description {
+      opacity: 1;
+      .transform(translateY(0));
+    }
+  }
+}
+
+/* hardware */
+
+.hardware,.aboutus {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #fff;
+  background-size: cover;
+  // .border-radius(100%,  70% 70% 0 0);
+  .yearn_content{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .introduction{
+    max-width: 900px;
+    margin: 0 auto;
+    text-indent: 2em;
+    line-height: 28px;
+    p{
+      margin-bottom: 10px;
+    }
+  }
+  .hardware_content {
+    .display(flex);
+    .flex-wrap(nowrap);
+    .justify-content(space-between);
+    .item {
+      text-align: center;
+      width: 200px;
+      height: 200px;
+      background: #f4f4f4;
+      .display(flex);
+      .flex-direction(column);
+      .justify-content(flex-start);
+      padding: 15px;
+      .box-sizing(border-box);
+      color: #545454;
+      cursor: pointer;
+      &:nth-of-type(1):hover {
+        color: #ffd012;
+      }
+      &:nth-of-type(2):hover {
+        color: #f600b8;
+      }
+      &:nth-of-type(3):hover {
+        color: #ec4e00;
+      }
+      &:nth-of-type(4):hover {
+        color: #357bda;
+      }
+      &:nth-of-type(5):hover {
+        color: #1ba600;
+      }
+      .title {
+        color: #333;
+        line-height: 25px;
+        margin-top: 10px;
+      }
+      .icon_box {
+        width: 70px;
+        margin: 0 auto;
+      }
+      .iconfont {
+        margin-top: 10px;
+        font-size: 70px;
+      }
+    }
+  }
+  @media(max-width:768px) {
+    .border-radius(30px 30px 0 0);
+    .hardware_content {
+      .flex-wrap(wrap);
+      .justify-content(center);
+      margin: 0 auto;
+      .item {
+        margin: 5px;
+        width: 150px;
+        height: 200px;
+        .title {
+          .font-size-rem(@font-size-s);
+        }
+      }
+    }
+  }
+}
+.aboutus{
+  background: url('../images/problemsBg.jpg') no-repeat;
+  background-size: cover;
+}
+.hardware{
+  // background: url('../images/problemsBg.jpg') no-repeat center center;
+}
+/* photo */
+
+.photo {
+  padding: 50px 0;
+  position: relative;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  background: url('../images/swim_bg_2.png') repeat-y;
+  background-size: 100% 100%;
+  .yearn_content {
+    max-width: 1400px;
+    overflow: hidden;
+    position: relative;
+  }
+  .swiper-container {
+    width: 1200px;
+    .swiper-slide {
+      width: 400px;
+      height: 200px;
+      background: #ddd;
+      cursor: pointer;
+      overflow: hidden;
+      img {
+        width: 100%;
+        /* height: 100%; */
+      }
+    }
+  }
+  .swiper-button-prev {
+    left: 10px;
+  }
+  .swiper-button-next {
+    right: 10px;
+  }
+  @media(max-width:768px) {
+    .background-size(auto,
+    auto);
+    .swiper-container {
+      width: 95%;
+      // height: 100px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+  }
+}
+
+/* fee */
+
+.fee {
+  background: #f4f4f4;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .tips {
+    color: #5f5f5f;
+    text-align: center;
+    margin: -20px auto 20px;
+    .font-size-rem(@font-size-m);
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+  .fee_cards {
+    .display(flex);
+    .justify-content(space-between);
+    .flex-wrap(nowrap);
+    cursor: pointer;
+    .left_card {
+      width: 265px;
+      color: #fff;
+      background: #f08200;
+      text-align: center;
+      line-height: 32px;
+      .font-size-rem(@font-size-m);
+      .transition(all .3s);
+      .border-radius(10px);
+      &:hover {
+        .box-shadow(0 0 3px 2px #ddd);
+        .transform(translateY(-10px));
+      }
+      div {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .font-size-rem(@font-size-s);
+        &:nth-of-type(1) {
+          border-bottom: 1px dashed #ddd;
+        }
+        .classTitle {
+          .font-size-rem(@font-size-xl);
+        }
+        .price {
+          .font-size-rem(@font-size-xxl);
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  @media(max-width:768px) {
+    .fee_cards {
+      .flex-wrap(wrap);
+      .justify-content(space-around);
+      .left_card {
+        width: 90%;
+      }
+      .fee_card {
+        width: 90%;
+        margin: 10px 0;
+      }
+      .left_card{
+        height: 300px;
+      }
+    }
+  }
+}
+// 教练团队
+.yearn_teachers {
+  // background:  url('../images/bg_0.jpg') center center;
+  background: url('../images/primary_bg_4.png') no-repeat;
+  padding: 50px 0;
+  position: relative;
+  .yearn_content {
+    margin-top: 62px;
+    position: relative;
+    max-width: 1400px;
+  }
+  .teachers-swiper {
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+  }
+  .teachers-swiper-pagination {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .teachers-swiper {
+    overflow: hidden;
+    .swiper-slide {
+      width: 220px;
+      text-align: center;
+      color: #545454;
+      line-height: 0;
+      transition: all .3s;
+      overflow: hidden;
+      .font-size-rem(@font-size-m);
+      position: relative;
+      cursor: pointer;
+      .teacher_img {
+        width: 100%;
+        height: 320px;
+      }
+      .teacher_text {
+        position: absolute;
+        bottom: -114px;
+        padding: 15px 8px;
+        background:rgba(0, 0, 0, .6);
+        color: #fff;
+        font-size: 16px;
+        line-height: 20px;
+        width: 100%;
+        transition: all .3s;
+        .teacher_title{
+          font-size: 22px;
+          margin-bottom: 10px;
+        }
+        .teacher_excerpt{
+          font-size: 16px;
+        }
+        .line{
+          width: 100%;
+          height: 1px;
+          background: rgba(255,255,255,.5);
+          margin:10px 0;
+        }
+        .name{
+          font-weight: 600;
+        }
+        .teacher_content{
+          font-size: 14px;
+          margin-top: 8px;
+          white-space: pre-wrap;
+          height: 88px;
+        }
+      }
+      &:hover {
+        .teacher_text {
+          bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+
+.fee_card {
+  width: 265px;
+  text-align: center;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  background: #fff;
+  .transition(all .3s);
+  .border-radius(10px);
+  &:hover {
+    .box-shadow(0 5px 5px #ddd);
+    .transform(translateY(-10px)) !important;
+  }
+  .card_title {
+    color: #fff;
+    padding: 20px 0;
+    background: #f08200;
+    p {
+      .font-size-rem(@font-size-s);
+      line-height: 21px;
+      &:nth-of-type(1) {
+        line-height: 30px;
+        .font-size-rem(@font-size-l);
+      }
+    }
+  }
+  .card_content {
+    color: #545454;
+    line-height: 25px;
+    padding: 15px 0;
+    .font-size-rem(@font-size-s);
+    p:nth-of-type(1) {
+      color: #ec4e00;
+    }
+  }
+  .card_price {
+    line-height: 75px;
+    color: #ec4e00;
+    border-top: 1px dashed #ddd;
+    .font-size-rem(@font-size-xxxl);
+  }
+}
+
+/* contactus */
+
+.contactus {
+  padding: 20px 0;
+  background: url('../images/swim_footerbg.jpg');
+  overflow: hidden;
+  .contactus_content {
+    color: #fff;
+    padding: 0 200px;
+    .display(flex);
+    .align-items(center);
+    .flex-wrap(nowrap);
+    .box-sizing(border-box);
+    .justify-content(flex-start);
+  }
+  .phones {
+    flex: 1 1 250px;
+    white-space: nowrap;
+    margin-left: 50px;
+    .flex-direction(column);
+    .display(flex);
+    h1 {
+      .font-size-rem(@font-size-xxl);
+    }
+    h2 {
+      font-size: 40px;
+      line-height: 70px;
+    }
+    h3 {
+      .font-size-rem(@font-size-m);
+    }
+  }
+  @media(max-width:768px) {
+    .contactus_content {
+      color: #fff;
+      padding: 0;
+      .display(flex);
+      .flex-direction(column);
+      .align-items(center);
+      .flex-wrap(nowrap);
+      .box-sizing(border-box);
+      .justify-content(flex-start);
+      .phones {
+        width: 100%;
+        flex: none;
+        margin: 0;
+        text-align: center;
+        * {
+          font-size: 15px !important;
+          line-height: 27px !important;
+          white-space: pre-wrap;
+        }
+      }
+    }
+  }
+}
+
+.problems {
+  padding: 50px 0;
+  // background: @color-background;
+  // background: url('../images/primary_bg_4.png') repeat;
+  .problems_content {
+    max-width: 800px;
+    margin: 0 auto;
+    .yearn_content {
+      .part {
+        .part_title {
+          font-size: @font-size-xxl;
+          line-height: 40px;
+        }
+        .problems_list{
+         padding: 0 20px;
+        }
+      }
+      .left {
+        .part_title{
+          color: #ef3c56;
+        }
+        .item{
+          background: @color-theme-s;
+          .item_title{
+            color: #fff;
+            .iconfont{
+              color: #fff;
+            }
+          }
+          .item_content{
+            background: #fff;
+            line-height: 32px;
+          }
+        }
+      }
+      .right{
+        .part_title{
+          color: #ed8f25;
+        }
+        .item{
+          background: @color-theme-s;
+          .item_title{
+            color: #fff;
+            .iconfont{
+              color: #fff;
+            }
+          }
+          .item_content{
+            border-radius: 0;
+          }
+        }
+      }
+    }
+  }
+}

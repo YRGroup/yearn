@@ -1,0 +1,395 @@
+.background-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.primary-prev {
+  left: 0;
+}
+.primary-next {
+  right: 0;
+}
+.primary-prev,
+.primary-next {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  line-height: 50px;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  cursor: pointer;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: none;
+  user-select: none;
+  z-index: 99;
+  transition: all 0.5s;
+  border-radius: 50%;
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+@media (max-width: 768px) {
+  .primary-prev,
+  .primary-next {
+    display: none;
+  }
+}
+.swiper-button-disabled {
+  opacity: .5;
+}
+/* aboutus */
+.kinder_aboutus {
+  position: relative;
+  margin-top: -20px;
+  padding: 70px 0;
+  background: url('../images/kinder_bg1.png') no-repeat;
+  background-size: 100% 100%;
+}
+.kinder_aboutus .yearn_content {
+  display: flex;
+  padding: 50px;
+  max-width: 1000px;
+  background: rgba(0, 0, 0, 0.1);
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.kinder_aboutus .desc {
+  color: #fff;
+  line-height: 25px;
+  text-indent: 2em;
+  padding-left: 20px;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+@media (max-width: 768px) {
+  .kinder_aboutus .yearn_content {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .kinder_aboutus .yearn_content img {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  .kinder_aboutus .yearn_content .desc {
+    margin-top: 10px;
+    padding-left: 0;
+  }
+}
+/* idea */
+.kinder_idea {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  position: relative;
+  margin-top: -20px;
+  background: url('../images/kinder_bg4.png') no-repeat;
+  background-size: 100% 100%;
+}
+.kinder_idea .idea_content {
+  background: #fff;
+  color: #333;
+  line-height: 25px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 100px 60px;
+  box-sizing: border-box;
+  text-indent: 2em;
+  border: 10px solid #bc1c33;
+  border-bottom: none;
+  border-radius: 15px;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+.kinder_idea .more {
+  display: block;
+  text-align: center;
+  width: 104px;
+  line-height: 30px;
+  color: #d94123;
+  border: 1px solid #d94123;
+  margin: 0 auto;
+  text-indent: 0;
+}
+@media (max-width: 768px) {
+  .kinder_idea .idea_content {
+    padding: 20px 10px;
+    border: 5px solid #d94123;
+    width: 100%;
+  }
+}
+/* classes */
+.kinder_classes {
+  position: relative;
+  margin-top: -40px;
+  padding: 50px 0;
+  background-image: url('../images/kinder_bg5.png');
+  background-size: 100% 100%;
+}
+.kinder_classes .yearn_content {
+  position: relative;
+}
+.kinder_classes .img_wrapper img {
+  width: 100%;
+  height: 100%;
+}
+.kinder_classes .classes-next,
+.kinder_classes .classes-prev {
+  color: #fff;
+  top: 85%;
+  background: none;
+}
+.kinder_classes .classes-next {
+  right: -10px;
+}
+.kinder_classes .classes-prev {
+  left: -10px;
+}
+.kinder_classes .class_desc {
+  background: #fafafa;
+  padding: 30px 20px;
+  position: relative;
+}
+.kinder_classes .class_desc h3 {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 48px;
+  border-bottom: 2px solid #0873c0;
+  margin-bottom: 20px;
+}
+.kinder_classes .class_desc p {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 20px;
+}
+.kinder_classes .class_desc .more {
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
+  font-size: 12px;
+  color: #0873c0;
+  border: 1px solid #0873c0;
+  text-align: center;
+  line-height: 24px;
+  padding: 0 20px;
+  border-radius: 50px;
+  z-index: 2;
+  overflow: hidden;
+}
+.kinder_classes .class_desc .more::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  display: block;
+  z-index: -1;
+  background: #0873c0;
+  transition: all 0.4s cubic-bezier(0.35, 0.75, 0.55, 1);
+}
+.kinder_classes .class_desc .more:hover {
+  color: #fff;
+}
+.kinder_classes .class_desc .more:hover:after {
+  width: 100%;
+}
+.kinder_classes .classes_swiper_top {
+  height: 380px;
+  width: 90%;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  position: relative;
+}
+.kinder_classes .classes_swiper_top .swiper-slide {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.kinder_classes .classes_swiper_top .img_wrapper {
+  width: 70%;
+  overflow: hidden;
+  flex: 1 0 auto;
+}
+.kinder_classes .classes_swiper_bottom {
+  width: 90%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.kinder_classes .classes_swiper_bottom .swiper-slide {
+  width: 150px;
+  color: #333;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+}
+.kinder_classes .classes_swiper_bottom h3 {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 25px;
+  color: #ddd;
+}
+.kinder_classes .classes_swiper_bottom .img_wrapper {
+  height: 75px;
+  border: 1px solid #999;
+  background-color: #000;
+  background-size: 100% 100%;
+  position: relative;
+}
+.kinder_classes .classes_swiper_bottom .img_wrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.kinder_classes .classes_swiper_bottom .swiper-slide-active {
+  color: #28a8e3;
+}
+.kinder_classes .classes_swiper_bottom .swiper-slide-active h3 {
+  color: #fff;
+  font-size: 16px;
+  font-size: 1rem;
+}
+.kinder_classes .classes_swiper_bottom .swiper-slide-active .img_wrapper {
+  opacity: 1;
+  border: 2px solid #fff;
+}
+.kinder_classes .classes_swiper_bottom .swiper-slide-active .img_wrapper::before {
+  background: rgba(0, 0, 0, 0);
+}
+@media (max-width: 768px) {
+  .kinder_classes .classes_swiper_top {
+    height: auto;
+    width: 80%;
+  }
+  .kinder_classes .classes_swiper_top .img_wrapper {
+    width: 100%;
+    height: 150px;
+  }
+  .kinder_classes .classes_swiper_top .swiper-slide {
+    flex-wrap: wrap;
+  }
+  .kinder_classes .class_desc {
+    padding: 10px;
+    padding-bottom: 40px;
+  }
+  .kinder_classes .class_desc h3 {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 28px;
+  }
+  .kinder_classes .class_desc p {
+    height: 160px;
+    overflow: hidden;
+  }
+  .kinder_classes .class_desc .more {
+    bottom: 15px;
+    right: 35px;
+  }
+}
+/* teacher */
+.teachers {
+  padding: 35px 0;
+  position: relative;
+  margin-top: -20px;
+  background: url('../images/kinder_bg6.png');
+  background-size: 100% 100%;
+}
+.teachers .yearn_content {
+  margin-top: 62px;
+  position: relative;
+  max-width: 1400px;
+}
+.teachers .teachers-swiper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.teachers .teachers-swiper-pagination {
+  text-align: center;
+  padding-top: 20px;
+}
+.teachers .teachers-swiper {
+  overflow: hidden;
+}
+.teachers .teachers-swiper .swiper-slide {
+  width: 190px;
+  text-align: center;
+  color: #545454;
+  background: #fff;
+  transition: all .3s;
+  font-size: 0;
+  cursor: pointer;
+}
+.teachers .teachers-swiper .swiper-slide .teacher_img {
+  width: 100%;
+  height: 220px;
+}
+.teachers .teachers-swiper .swiper-slide:hover {
+  margin-top: -10px;
+}
+/* kinder_videos */
+.kinder_videos {
+  position: relative;
+  padding: 50px 0;
+  margin-top: -20px;
+  color: #fff;
+  text-align: center;
+  height: 400px;
+  background-image: url('../images/kinder_bg7.png');
+  background-size: 100% 100%;
+}
+.kinder_videos .yearn_content {
+  max-width: 800px;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.kinder_videos .yearn_title,
+.kinder_videos .yearn_subtitle {
+  color: #fff;
+}
+/* actives */
+.kinder_actives {
+  position: relative;
+  padding: 50px 0;
+  background-image: url('../images/kinder_bg8.png');
+  background-size: 100% 100%;
+  margin-top: -20px;
+}
+.kinder_actives .yearn_content {
+  width: 1400px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+.kinder_actives .swiper-container {
+  width: 90%;
+  padding: 40px 0;
+}
+.kinder_actives .swiper-slide {
+  height: 220px;
+  background: #ddd;
+  cursor: pointer;
+  overflow: hidden;
+}
+.kinder_actives .swiper-slide img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .kinder_actives .yearn_content {
+    width: 100%;
+  }
+  .kinder_actives .swiper-container {
+    width: 95%;
+  }
+  .kinder_actives .swiper-button-prev,
+  .kinder_actives .swiper-button-next {
+    display: none;
+  }
+}

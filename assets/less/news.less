@@ -1,0 +1,638 @@
+@import "../est/all.less";
+@import "./variable.less";
+.page_content {
+  // min-height: 100vh;
+  box-sizing: border-box;
+  background: @color-background;
+}
+
+.headerImg {
+  background: url('../images/newBg.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  .yearn_content {
+    height: 300px;
+    position: relative;
+    .title {
+      font-size: 40px;
+      line-height: 40px;
+      color: #add2ff;
+      position: absolute;
+      top: 50%;
+      margin-top: -20px;
+    }
+  }
+  @media(max-width:840px) {
+    .yearn_content {
+      height: 150px;
+      padding-left: 30px;
+    }
+  }
+}
+
+/* 新闻列表页 */
+
+.news_wrapper {
+  background: @color-background;
+  .yearn_news {
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+  .item {
+    margin: 10px 0;
+    .line {
+      background: @color-theme-s;
+      height: 3px;
+      width: 0;
+      margin: 0 auto;
+      .transition(width,
+      .3s);
+    }
+    &:hover {
+      .line {
+        width: 100%;
+      }
+      a {
+        .time {
+          color: @color-theme-s;
+        }
+      }
+    }
+    a {
+      color: inherit;
+      display: block;
+      background: #fff;
+      color: #aaa;
+      padding: 30px;
+      position: relative;
+      .transition(all .3s);
+      .box-sizing(border-box);
+    }
+    .item_img {
+      height: 130px;
+      margin-top: 10px;
+      .background-cover();
+    }
+    .time {
+      .font-size-rem(@font-size-xxxl);
+      span {
+        .font-size-rem(@font-size-m);
+      }
+    }
+    .title {
+      color: @color-text-l;
+      .font-size-rem(@font-size-m);
+      line-height: 45px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .content {
+      .font-size-rem(@font-size-s);
+      line-height: 20px;
+      height: 40px;
+      overflow: hidden;
+      word-break: break-all;
+    }
+  }
+}
+
+.pagination {
+  text-align: center;
+  background: #fff;
+  padding: 30px 0;
+  color: @color-text;
+  display: block;
+  margin-bottom: 0;
+  a {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0 3px;
+    background: @color-background;
+    color: inherit;
+  }
+  .current {
+    color: #fff;
+    background: @color-theme-s;
+  }
+}
+
+/* 新闻详情页*/
+
+.detailBg {
+  background: @color-background;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.detail-mian {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+  min-height: calc(100vh - 117px);
+}
+
+.detail-head {
+  width: 100%;
+  padding: 20px 0 40px;
+  text-align: center;
+  border-bottom: 1px dashed #dddddd;
+}
+
+.detail-head>h4 {
+  font-size: 20px;
+  color: #333333;
+  font-weight: normal;
+}
+
+.detail-head>div {
+  font-size: 14px;
+  color: #999999;
+  margin-top: 8px;
+}
+
+.detail-con {
+  padding: 50px 20px;
+  font-size: 16px;
+  color: #333;
+  max-width: 1000px;
+  overflow: hidden;
+  line-height: 45px;
+}
+
+// .detail-con>p,
+// .detail-con>h4 {
+//   text-indent: 2em;
+// }
+.detail-con img {
+  text-indent: 0;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+@media(max-width:840px) {
+  .news-container>li {
+    width: auto;
+    padding: 20px 12px;
+  }
+  .imgbox {
+    width: 120px;
+    height: 80px;
+  }
+  .news-item {
+    width: 60%;
+    position: relative;
+  }
+  .news-item>p,
+  .news-more {
+    display: none;
+  }
+  .news-item>h4 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin: 6px;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  .news-item>div {
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    left: 6px;
+    font-size: 12px;
+    color: #999999;
+  }
+  .detail-mian {
+    padding-top: 0;
+  }
+}
+
+/*招聘页*/
+
+.recruit_page {
+  .yearn_content {
+    max-width: 1000px;
+  }
+  .yearn_tag {
+    padding: 30px;
+    border-radius: 0;
+    color: #fff; // max-width: 700px;
+    margin: 0 auto;
+    .email {
+      color: #fff;
+      margin: 0 5px;
+      font-size: 20px;
+    }
+  }
+  .recruit_banner {
+    height: 500px;
+    background-image: url('../images/joinusBg.jpg');
+    background-size: 100% auto;
+    background-position: center center; // background-repeat: no-repeat;
+    position: relative;
+    // background-attachment: fixed;
+    .title {
+      position: absolute;
+      bottom: 0;
+      height: 100px;
+      width: 100%;
+      font-size: 40px;
+      line-height: 100px;
+      background: rgba(206, 199, 199, 0.7);
+      color: @color-theme-s;
+    }
+  }
+  .boon {
+    padding: 50px 0;
+    background: #fff;
+    ul {
+      .display(flex);
+      .flex-wrap(wrap);
+      .justify-content(space-between);
+      li {
+        position: relative;
+        height: 150px;
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #333;
+        transition: all .5s;
+        &:hover {
+          .sharp {
+            opacity: 1;
+          }
+        }
+        p {
+          margin: 20px 0;
+        }
+        .sharp {
+          cursor: pointer;
+          user-select: none;
+          opacity: .8;
+          transition: all .5s;
+          .iconfont {
+            position: relative;
+            font-size: 50px;
+          }
+        }
+        &:nth-of-type(1) {
+          .sharp {
+            background: #e9686d;
+            &::before {
+              border-bottom-color: #e9686d;
+            }
+            &::after {
+              border-top-color: #e9686d;
+            }
+          }
+        }
+        &:nth-of-type(2) {
+          .sharp {
+            background: #f1955a;
+            &::before {
+              border-bottom-color: #f1955a;
+            }
+            &::after {
+              border-top-color: #f1955a;
+            }
+          }
+        }
+        &:nth-of-type(3) {
+          .sharp {
+            background: #7f98e0;
+            &::before {
+              border-bottom-color: #7f98e0;
+            }
+            &::after {
+              border-top-color: #7f98e0;
+            }
+          }
+        }
+        &:nth-of-type(4) {
+          .sharp {
+            background: #7e6fca;
+            &::before {
+              border-bottom-color: #7e6fca;
+            }
+            &::after {
+              border-top-color: #7e6fca;
+            }
+          }
+        }
+        &:nth-of-type(5) {
+          .sharp {
+            background: #6faacb;
+            &::before {
+              border-bottom-color: #6faacb;
+            }
+            &::after {
+              border-top-color: #6faacb;
+            }
+          }
+        }
+        &:nth-of-type(6) {
+          .sharp {
+            background: #5dc585;
+            &::before {
+              border-bottom-color: #5dc585;
+            }
+            &::after {
+              border-top-color: #5dc585;
+            }
+          }
+        }
+      }
+    }
+  }
+  .recruit_list {
+    .item {
+      .item_title,
+      .item_content {
+        background: #fff;
+      }
+      .item_content {
+        margin-top: -6px;
+        border-radius: 0;
+      }
+    }
+  }
+  .positions {
+    padding: 50px 0;
+  }
+  @media (max-width:768px) {
+    .recruit_banner {
+      height: 180px;
+    }
+    .boon {
+      ul {
+        padding: 0 20px;
+        li {
+          margin-bottom: 30px;
+          .sharp {
+            transform: scale(.8);
+          }
+        }
+      }
+    }
+    .recruit_list {
+      padding: 0 10px;
+    }
+  }
+}
+
+//评论
+.comments {
+  .comments-title {
+    color: @color-theme-s;
+    line-height: 30px;
+    .font-size-rem(@font-size-l);
+    border-bottom: 1px solid #ddd;
+  }
+  .comment-list {
+    padding: 40px 0;
+    .main-comment {
+      padding: 10px 0;
+    }
+    .depth-1 {
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin: 10px 0;
+    }
+    .comment {
+      .pull-left {
+        .display(flex);
+        justify-content: flex-start; // margin: 20px 0;
+        .user_info {
+          color: @color-theme-s;
+          .display(flex);
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          margin-right: 20px;
+          .avatar {
+            border-radius: 50%;
+          }
+          .user-name {
+            white-space: nowrap;
+            margin: 10px 0;
+          }
+          .label-info {
+            .font-size-rem(6px);
+            color: #fff;
+            background: @color-theme-s;
+            border-radius: 5px;
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+  .media-body {
+    .conmment-content {
+      font-size: @font-size-m;
+      color: @color-text;
+      line-height: 30px;
+    }
+    .comment-info {
+      margin: 10px 0;
+      color: #999;
+      .font-size-rem(@font-size-s);
+      a {
+        color: inherit;
+        &:hover {
+          color: @color-theme-s;
+        }
+      }
+    }
+  }
+  .children {
+    background: @color-background;
+    margin: 0 40px;
+    padding: 10px 20px;
+    .avatar {
+      display: none;
+    }
+    .conmment-content {
+      .font-size-rem(@font-size-s);
+    }
+  }
+  .comment-form {
+    padding: 20px 0;
+    .form_item {
+      margin: 10px 0;
+    }
+  }
+  .form_item {
+    display: flex;
+    flex-direction: column;
+    label {
+      line-height: 45px;
+    }
+    textarea {
+      color: @color-text;
+      padding: 10px;
+    }
+  }
+  .submit {
+    color: #fff;
+    background: @color-theme-s;
+    padding: 10px 20px;
+    border: none;
+    &:hover {
+      opacity: .9;
+    }
+  }
+  .logged-in-as {
+    display: none;
+  }
+}
+
+/*招生解答*/
+
+.admission_banner {
+  height: 400px;
+  background-image: url('../images/admissionBg.jpg');
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  overflow: hidden;
+  .title {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    font-size: 40px;
+    line-height: 100px;
+    background: rgba(206, 199, 199, 0.7);
+    color: @color-theme-s;
+  }
+  @media (max-width:768px) {
+    height: 180px;
+  }
+}
+
+.admission_problems {
+  padding: 50px 0; // background: @color-background;
+  // background: url('../images/primary_bg_9.jpg') no-repeat center center;
+  .problems_content {
+    .yearn_content {
+      .part {
+        .part_title {
+          font-size: @font-size-xxl;
+          line-height: 40px;
+        }
+        .problems_list {
+          // .item{
+          //   background: @color-background;
+          // }
+        }
+      }
+      .left {
+        .part_title {
+          color: #ef3c56;
+        }
+        .item {
+          background: #ef3c56;
+          .item_title {
+            color: #fff;
+            .iconfont {
+              color: #fff;
+            }
+          }
+          .item_content {
+            border-radius: 0;
+          }
+        }
+      }
+      .right {
+        .part_title {
+          color: #ed8f25;
+        }
+        .item {
+          background: #ed8f25;
+          .item_title {
+            color: #fff;
+            .iconfont {
+              color: #fff;
+            }
+          }
+          .item_content {
+            border-radius: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.admission_guide {
+  padding: 50px 0;
+  background: @color-background;
+  // background: url('../images/primary_bg_9.jpg') no-repeat center center;
+  background-size: cover;
+  .guides_content {
+    background: @color-background;
+    border: 1px solid @color-theme-s; // border-top: none;
+    .tab {
+      // background: #5dc585;
+      background: @color-theme-s;
+      height: 56px;
+      line-height: 56px;
+    }
+    .active {
+      border-top: 3px solid @color-theme-s;
+      background: #fff;
+      color: @color-theme-s; // background: @color-theme-s;
+    }
+    .content {
+      line-height: 30px;
+      color: @color-text;
+      background: #fff;
+      white-space: pre-line;
+    }
+  }
+}
+
+// 在线报名
+.apply {
+  padding: 50px 0;
+  .apply_form {
+    padding: 0 30px;
+    box-sizing: border-box;
+    max-width:400px;
+    margin: 0 auto;
+    input{
+      .font-size-rem(@font-size-s);
+    }
+    label {
+      padding: 10px ;
+    }
+    .btn {
+      padding: 10px 40px; // margin: 0 auto;
+      display: block;
+      border-radius: 0;
+      border-color: @color-theme-s;
+      background: @color-theme-s;
+      width:100%;
+    }
+    .form-control {
+      border-radius: 0;
+      .form-control {
+        border-radius: 0;
+      }
+    }
+  }
+  @media (max-width:768px) {
+    .apply_form {
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+}

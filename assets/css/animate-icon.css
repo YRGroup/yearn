@@ -1,0 +1,201 @@
+/*
+  需要父级hover触发
+
+  1.animate types:
+    slideRight
+    rotate
+
+*/
+
+.animate_icon {
+  display: inline-block;
+  transition: all .5s;
+}
+
+/* ---slideRight---*/
+
+.slideRightIcon:hover .animate_icon {
+  -webkit-animation: slideRight .3s;
+  -moz-animation: slideRight .3s;
+  animation: slideRight .3s;
+}
+
+@-webkit-keyframes slideRight {
+  49% {
+    -webkit-transform: translate(100%);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translate(-100%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes slideRight {
+  49% {
+    -moz-transform: translate(100%);
+  }
+  50% {
+    opacity: 0;
+    -moz-transform: translate(-100%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  49% {
+    -webkit-transform: translate(100%);
+  }
+  50% {
+    opacity: 0;
+    transform: translate(-100%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+
+/*rotate */
+
+.rotatez:hover .animate_icon {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+@-webkit-keyframes spinAround {
+  from {
+    -webkit-transform: rotate(0deg)
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spinAround {
+  from {
+    -moz-transform: rotate(0deg)
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* scale */
+
+.scaleIcon:hover .animate_icon {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* sonar */
+
+.sonarIcon .animate_icon {
+  position: relative;
+}
+
+.sonarIcon .animate_icon:after {
+  content: ' ';
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.sonarIcon:hover .animate_icon {
+  -webkit-transform: scale(0.93);
+  -moz-transform: scale(0.93);
+  -ms-transform: scale(0.93);
+  transform: scale(0.93);
+}
+
+.sonarIcon:hover .animate_icon:after {
+  -webkit-animation: sonarEffect 1.3s ease-out 75ms;
+  -moz-animation: sonarEffect 1.3s ease-out 75ms;
+  animation: sonarEffect 1.3s ease-out 75ms;
+}
+
+@-webkit-keyframes sonarEffect {
+  0% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.5;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3), 0 0 10px 10px rgba(255, 255, 255, 1), 0 0 0 10px rgba(0, 0, 0, 0.2), 0 0 12px 12px rgba(255, 255, 255, 0), 0 0 0 12px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3), 0 0 10px 10px rgba(255, 255, 255, 1), 0 0 0 10px rgba(0, 0, 0, 0.2), 0 0 12px 12px rgba(255, 255, 255, 0), 0 0 0 12px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes sonarEffect {
+  0% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.5;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3), 0 0 10px 10px rgba(255, 255, 255, 1), 0 0 0 10px rgba(0, 0, 0, 0.2), 0 0 12px 12px rgba(255, 255, 255, 0), 0 0 0 12px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3), 0 0 10px 10px rgba(255, 255, 255, 1), 0 0 0 10px rgba(0, 0, 0, 0.2), 0 0 12px 12px rgba(255, 255, 255, 0), 0 0 0 12px rgba(0, 0, 0, 0.2);
+    -moz-transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes sonarEffect {
+  0% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.5;
+    box-shadow: 0 0 0 2px rgba(255, 208, 18, 0.8), 0 0 10px 10px rgba(255, 255, 255, 1), 0 0 0 10px rgba(255, 208, 18, 0.5), 0 0 12px 12px rgba(255, 255, 255, 0), 0 0 0 12px rgba(255, 208, 18, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 2px rgba(255, 208, 18, 0.8), 0 0 10px 10px rgba(255, 255, 255, 1), 0 0 0 10px rgba(255, 208, 18, 0.5), 0 0 12px 12px rgba(255, 255, 255, 0), 0 0 0 12px rgba(255, 208, 18, 0.2);
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.rotatey:hover .animate_icon {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg)
+}
+
+.rotatex:hover .animate_icon {
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  transform: rotateX(180deg)
+}
