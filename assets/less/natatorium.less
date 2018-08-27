@@ -1,6 +1,5 @@
 @import "../est/all.less";
 @import "./variable.less";
-
 .main_bg {
   background: url('../images/mainbg.jpg') repeat;
 }
@@ -39,7 +38,7 @@
     .font-size-rem(@font-size-m);
     .rgba-background(rgba(38, 112, 183, 0.7));
     .box-sizing(border-box);
-    span{
+    span {
       // float: right;
       display: block;
       text-align: right;
@@ -137,22 +136,22 @@
 
 /* hardware */
 
-.hardware,.aboutus {
+.hardware,
+.aboutus {
   padding-top: 50px;
   padding-bottom: 50px;
   background: #fff;
-  background-size: cover;
-  // .border-radius(100%,  70% 70% 0 0);
-  .yearn_content{
+  background-size: cover; // .border-radius(100%,  70% 70% 0 0);
+  .yearn_content {
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  .introduction{
+  .introduction {
     max-width: 900px;
     margin: 0 auto;
     text-indent: 2em;
     line-height: 28px;
-    p{
+    p {
       margin-bottom: 10px;
     }
   }
@@ -219,13 +218,16 @@
     }
   }
 }
-.aboutus{
+
+.aboutus {
   background: url('../images/problemsBg.jpg') no-repeat;
   background-size: cover;
 }
-.hardware{
+
+.hardware {
   // background: url('../images/problemsBg.jpg') no-repeat center center;
 }
+
 /* photo */
 
 .photo {
@@ -264,8 +266,7 @@
     .background-size(auto,
     auto);
     .swiper-container {
-      width: 95%;
-      // height: 100px;
+      width: 95%; // height: 100px;
     }
     .swiper-button-prev,
     .swiper-button-next {
@@ -336,12 +337,13 @@
         width: 90%;
         margin: 10px 0;
       }
-      .left_card{
+      .left_card {
         height: 300px;
       }
     }
   }
 }
+
 // 教练团队
 .yearn_teachers {
   // background:  url('../images/bg_0.jpg') center center;
@@ -356,8 +358,6 @@
   .teachers-swiper {
     max-width: 1200px;
     margin: 0 auto;
-
-
   }
   .teachers-swiper-pagination {
     text-align: center;
@@ -383,29 +383,29 @@
         position: absolute;
         bottom: -114px;
         padding: 15px 8px;
-        background:rgba(0, 0, 0, .6);
+        background: rgba(0, 0, 0, .6);
         color: #fff;
         font-size: 16px;
         line-height: 20px;
         width: 100%;
         transition: all .3s;
-        .teacher_title{
+        .teacher_title {
           font-size: 22px;
           margin-bottom: 10px;
         }
-        .teacher_excerpt{
+        .teacher_excerpt {
           font-size: 16px;
         }
-        .line{
+        .line {
           width: 100%;
           height: 1px;
-          background: rgba(255,255,255,.5);
-          margin:10px 0;
+          background: rgba(255, 255, 255, .5);
+          margin: 10px 0;
         }
-        .name{
+        .name {
           font-weight: 600;
         }
-        .teacher_content{
+        .teacher_content {
           font-size: 14px;
           margin-top: 8px;
           white-space: pre-wrap;
@@ -420,7 +420,6 @@
     }
   }
 }
-
 
 .fee_card {
   width: 265px;
@@ -522,8 +521,7 @@
 }
 
 .problems {
-  padding: 50px 0;
-  // background: @color-background;
+  padding: 50px 0; // background: @color-background;
   // background: url('../images/primary_bg_4.png') repeat;
   .problems_content {
     max-width: 800px;
@@ -534,41 +532,41 @@
           font-size: @font-size-xxl;
           line-height: 40px;
         }
-        .problems_list{
-         padding: 0 20px;
+        .problems_list {
+          padding: 0 20px;
         }
       }
       .left {
-        .part_title{
+        .part_title {
           color: #ef3c56;
         }
-        .item{
+        .item {
           background: @color-theme-s;
-          .item_title{
+          .item_title {
             color: #fff;
-            .iconfont{
+            .iconfont {
               color: #fff;
             }
           }
-          .item_content{
-            background: #fff;
+          .item_content {
+            background: #f3f3f3;
             line-height: 32px;
           }
         }
       }
-      .right{
-        .part_title{
+      .right {
+        .part_title {
           color: #ed8f25;
         }
-        .item{
+        .item {
           background: @color-theme-s;
-          .item_title{
+          .item_title {
             color: #fff;
-            .iconfont{
+            .iconfont {
               color: #fff;
             }
           }
-          .item_content{
+          .item_content {
             border-radius: 0;
           }
         }

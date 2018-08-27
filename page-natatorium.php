@@ -200,7 +200,7 @@
   </section> -->
   <section class="yearn_teachers  container-fluid">
     <h3 class="yearn_title">team</h3>
-    <h4 class="yearn_subtitle">教练团队</h4>
+    <h4 class="yearn_subtitle">服务团队</h4>
     <div class="yearn_content">
       <div class="teachers-swiper">
       <?php
@@ -210,9 +210,11 @@
           <div class="swiper-slide"> 
               <img class="teacher_img"  src="<?php echo $img['url'];?>" alt="<?php echo $img['title'];?>">
               <div class="teacher_text">
-                <p class="teacher_title"><?php echo $img['title'];?>  <span class="teacher_excerpt"><?php echo $img['content'];?></span></p>
-                <p class="line"></p>
-                <p class="teacher_content"><?php echo $img['excerpt'];?>
+                <p class="teacher_title">
+                <?php echo $img['title'];?>  
+                <span class="teacher_excerpt"><?php echo $img['excerpt'];?></span></p>
+                <!-- <p class="line"></p>
+                <p class="teacher_content"><?php echo $img['content'];?> -->
               </p>
               </div>
           </div>
