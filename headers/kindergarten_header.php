@@ -54,7 +54,8 @@
           <a href="/kindergarten"> <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo/kindergartenLogo.png" alt="logo"></a>
           <div id="burgerBtn"></div>
         </div>
-        <div id="nav">
+        </div>
+        <div id="nav" class="nav">
           <ul>
             <li class="active"><a href="/">首页</a></li>
             <li data-id="kinder_aboutus"> <a href="#kinder_aboutus">关于我们</a></li>
@@ -65,6 +66,5 @@
             <li data-id="kinder_actives"> <a href="#kinder_actives">少儿活动</a></li>
           <!-- <li data-id="kinder_contactus"> <a href="#kinder_contactus">联系我们</a></li> -->
           </ul>
-        </div>
       </div>
       <!-- <div id="mobileBodyContent" > -->

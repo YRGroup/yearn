@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/baiduMap.css">
   <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/index.css">
 </head>
-<body>
+<body style="position:relative">
 <!-- -->
   <header class="yearn_header"> 
     <?php

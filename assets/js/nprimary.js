@@ -26,7 +26,7 @@ function getLoadingSrc(doms) {
     if (el.nodeName == 'IMG') {
       loadingSrc.push($(el).attr('src'))
     }
-    if ($(el).css('backgroundImage') != 'none') {
+    if ($(el).css(' ') != 'none') {
       var reg = /^url\("(.+)"\)$/;
       loadingSrc.push($(el).css('backgroundImage').match(reg)[1])
     }

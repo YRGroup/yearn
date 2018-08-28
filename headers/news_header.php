@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/course.css">
   <title><?php echo get_option('blogname').'-易尔动态';?></title>
 </head>
-<body>
+<body style="position:relative">
 
   <header class="yearn_header"> 
     <!-- <div class="gradual_box"></div> -->
@@ -77,7 +77,8 @@
           <a href="/"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo/<?php echo getLogo()?>.png" alt="logo"></a> 
           <div id="burgerBtn"></div>
         </div>
-        <div id="nav">
+      </div>
+        <div id="nav" class="nav">
           <ul>
             <li><a href="/">首页</a></li>
             <li> <a href="/category/news">易尔动态</a></li>
@@ -90,7 +91,6 @@
             <li> <a href="/#yearn_contactus">联系我们</a></li>
           </ul>
         </div>
-      </div>
       <!-- <div id="mobileBodyContent"> -->
 
 <?php
