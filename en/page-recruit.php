@@ -97,6 +97,6 @@ get_template_part('en/headers/news_header')?>
   </section>
   <?php get_template_part('templates/baidumap' );?>
   <?php get_footer();?>
-  <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.0&services=true"></script>
+  <script type="text/javascript" src="//api.map.baidu.com/api?key=&v=1.0&services=true"></script>
   <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/baiduMap.js"></script>
 </html>

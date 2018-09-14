@@ -77,8 +77,8 @@ get_template_part('headers/kindergarten_header');
   </section>
   
   <section class="teachers" id="kinder_teachers">
-    <h1 class="yearn_title text_fff">teachers team</h1>
-    <h2 class="yearn_subtitle text_fff">师资团队</h2>
+    <h1 class="yearn_title text_fff">teachers spirit</h1>
+    <h2 class="yearn_subtitle text_fff">教师风采</h2>
     <div class="yearn_content">
       <div class="teachers-swiper">
       <?php

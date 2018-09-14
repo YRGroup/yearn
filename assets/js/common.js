@@ -43,16 +43,16 @@ $('#burgerBtn').click(function () {
     showMobileNav();
   }
 });
-$('#nav li').on('click',function () {
+$('#nav li').on('click', function () {
   hideMobileNav();
 })
 
-$('#nav').on('touchmove',function(e){
-  return false ;
+$('#nav').on('touchmove', function (e) {
+  return false;
 })
 
-$('.yearn_header_mobile').on('touchmove',function(e){
-  return false ;
+$('.yearn_header_mobile').on('touchmove', function (e) {
+  return false;
 })
 //显示手机导航
 function showMobileNav() {
@@ -245,3 +245,16 @@ $('.tabs .tab').click(function () {
 })
 
 // initSkrollr();
+//小程序页面 隐藏标题
+function getQueryString(name) {
+  var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+  var r = window.location.search.substr(1).match(reg);
+  if (r != null) return unescape(r[2]);
+  return null;
+}
+
+if(getQueryString('weapp')==1){
+  $('.yearn_header_mobile').hide();
+  $('body').css('padding',0);
+  $('.detailBg').css('paddingTop',0)
+}

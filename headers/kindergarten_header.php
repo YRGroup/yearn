@@ -27,7 +27,6 @@
 </head>
 <body style="position:relative">
   <header class="yearn_header subpage_header animated "> 
-    <!-- <div class="gradual_box"></div> -->
     <?php
       // get_template_part('headers/topHeader');
     ?>
@@ -41,14 +40,10 @@
         <li class="item" data-id="kinder_idea"> <a class="item_link" href="javascript:;">教育理念</a></a></li>
         <li class="item" data-id="kinder_classes"> <a class="item_link" href="javascript:;">特色课程</a></li>
         <li class="item" data-id="kinder_teachers"> <a class="item_link" href="javascript:;">师资团队</a></li>
-        <!-- <li class="item" data-id="kinder_videos"> <a class="item_link" href="javascript:;">视频</a></li> -->
         <li class="item" data-id="kinder_actives"> <a class="item_link" href="javascript:;">少儿活动</a></li>
-        <!-- <li data-id="yearn_contactus"> <a href="javascript:;">联系我们</a></li> -->
       </ul>
     </div>
   </header>
-  <!-- <div >
-    <div id="mobile" class="mobile_nav"> -->
       <div class="yearn_header_mobile">
         <div class="model_top">
           <a href="/kindergarten"> <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo/kindergartenLogo.png" alt="logo"></a>
@@ -64,7 +59,5 @@
             <li data-id="kinderteachers"> <a href="#kinderteachers">师资团队</a></li>
             <li data-id="kinder_video"> <a href="#kinder_video">视频</a></li>
             <li data-id="kinder_actives"> <a href="#kinder_actives">少儿活动</a></li>
-          <!-- <li data-id="kinder_contactus"> <a href="#kinder_contactus">联系我们</a></li> -->
           </ul>
       </div>
-      <!-- <div id="mobileBodyContent" > -->

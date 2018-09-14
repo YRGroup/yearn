@@ -630,15 +630,7 @@ a:focus {
     display: none;
   }
 }
-.fixed_header + div {
-  padding-top: 71px;
-}
 .yearn_header_mobile {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
   display: none;
 }
 #mobileBodyContent {
@@ -778,14 +770,15 @@ a:focus {
     display: none;
   }
   .yearn_header_mobile {
-    display: block;
-  }
-  .model_top {
-    height: 60px;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 99;
+    display: block;
+    z-index: 9999;
+  }
+  .model_top {
+    height: 60px;
+    width: 100%;
     background: #fff;
     text-align: center;
     border-bottom: 1px solid #ddd;

@@ -1,7 +1,8 @@
 <section class="yearn_news" id="yearn_news"              data-bottom-bottom="background-position-x:0px;"        data-top-bottom="background-position-x:300px">
   <div class="yearn_content container">
     <h1 class="yearn_title row">YEARN DYNAMICS</h1>
-    <h2 class="yearn_subtitle row">易尔动态</h2>
+    <h2 class="yearn_subtitle row">易尔动态11</h2>
+
     <ul class="news_content row" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
       <?php $posts = get_posts(array('numberposts' => '4','post_type' => 'post','tax_query'=>array(array('taxonomy'=>'category','terms'=>'2')),));
       ?>

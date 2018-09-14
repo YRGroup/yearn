@@ -31,7 +31,6 @@
 <body style="position:relative">
 
   <header class="yearn_header"> 
-    <!-- <div class="gradual_box"></div> -->
       <?php
         // get_template_part('headers/topHeader');
       ?>
@@ -70,28 +69,25 @@
       </div>
     </div>
   </header>
-  <!-- <div>
-    <div id="mobile" class="mobile_nav"> -->
-      <div class="yearn_header_mobile">
-        <div class="model_top">
-          <a href="/"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo/<?php echo getLogo()?>.png" alt="logo"></a> 
-          <div id="burgerBtn"></div>
-        </div>
-      </div>
-        <div id="nav" class="nav">
-          <ul>
-            <li><a href="/">首页</a></li>
-            <li> <a href="/category/news">易尔动态</a></li>
-            <li> <a href="/kindergarten">幼儿园</a></li>
-            <li> <a href="/nprimary">小学部</a></li>
-            <li> <a href="/natatorium">游泳馆</a></li>
-            <li> <a href="/360view">园区全景</a></li>
-            <li><a href="/admission">招生信息</a></li>
-            <li><a href="/recruit">加入我们</a></li>
-            <li> <a href="/#yearn_contactus">联系我们</a></li>
-          </ul>
-        </div>
-      <!-- <div id="mobileBodyContent"> -->
+  <div class="yearn_header_mobile">
+    <div class="model_top">
+      <a href="/"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo/<?php echo getLogo()?>.png" alt="logo"></a> 
+      <div id="burgerBtn"></div>
+    </div>
+  </div>
+    <div id="nav" class="nav">
+      <ul>
+        <li><a href="/">首页</a></li>
+        <li> <a href="/category/news">易尔动态</a></li>
+        <li> <a href="/kindergarten">幼儿园</a></li>
+        <li> <a href="/nprimary">小学部</a></li>
+        <li> <a href="/natatorium">游泳馆</a></li>
+        <li> <a href="/360view">园区全景</a></li>
+        <li><a href="/admission">招生信息</a></li>
+        <li><a href="/recruit">加入我们</a></li>
+        <li> <a href="/#yearn_contactus">联系我们</a></li>
+      </ul>
+    </div>
 
 <?php
   function getLogo(){
