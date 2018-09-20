@@ -14,7 +14,7 @@
           <span class="titleIcon"><i class="iconfont">&#xe607;</i></span>
         </div>
         <ul class="nav">
-          <?php $courses = get_posts(array('post_type' => 'post','category' => '4','numberposts' => '0'));?>
+          <?php $courses = get_posts(array('post_type' => 'post','category' => '4','numberposts' => '10'));?>
           <?php $tmpid = $post->ID ?>
           <?php if($courses): foreach($courses as $post): ?>
           <li class="<?php if($post->ID == $tmpid)  echo 'active';?>">

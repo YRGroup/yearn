@@ -6,6 +6,9 @@
 .detail-mian {
   background: #fff;
 }
+.tenvideo_player {
+  height: 400px;
+}
 .news_banner {
   background: url('../images/prim_bg10.jpg') no-repeat center center;
 }
@@ -35,16 +38,16 @@
 .news_content .nav_wrapper {
   width: 280px;
 }
-.news_content .nav_wrapper .nav {
+.news_content .nav_wrapper .course_nav {
   padding: 15px 0;
   background: #fff;
 }
-.news_content .nav_wrapper .nav .item {
+.news_content .nav_wrapper .course_nav .item {
   display: block;
 }
 .news_content .nav_wrapper .title {
   color: #fff;
-  background: #0873c0;
+  background: #114875;
   font-size: 24px;
   line-height: 86px;
   border-bottom: 2px solid #e89214;
@@ -67,19 +70,9 @@
   z-index: 0;
   transition: all .4s ease 0s;
 }
-.news_content .nav_wrapper li::before {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  width: 0;
-  height: 100%;
-  z-index: 1;
-  transition: all .4s;
-  background: #0873c0;
-}
 .news_content .nav_wrapper li:hover {
-  color: #fff;
+  color: #114875;
+  background: #fafafa;
 }
 .news_content .nav_wrapper li:hover a {
   background: none;
@@ -99,7 +92,7 @@
 }
 .news_content .nav_wrapper .active {
   color: #fff;
-  background: #0873c0;
+  background: #114875;
 }
 .news_content .new_content {
   flex: 1 1 280px;

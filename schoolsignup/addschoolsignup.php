@@ -9,9 +9,10 @@ $model->name=$_REQUEST['name'];
 $model->phone=$_REQUEST['phone'];
 $model->student_name= isset( $_REQUEST['student_name'])? $_REQUEST['student_name']:'';
 $model->student_age=$_REQUEST['student_age'];
-$model->school=$_REQUEST['school'];
+// $model->school=$_REQUEST['school'];
+$model->school=isset( $_REQUEST['school'])?$_REQUEST['school']:'易尔实验学校';
 
-$model->school= '易尔小学部';
+// $model->school= '易尔小学部';
 
 
 function test()

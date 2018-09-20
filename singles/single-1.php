@@ -26,7 +26,7 @@
           <span>特色课程</span>
           <span class="titleIcon"><i class="iconfont">&#xe607;</i></span>
         </div>
-        <ul class="nav">
+        <ul class="course_nav">
           <?php $courses = get_posts(array('post_type' => 'post','category' => $cat_id_tmp,'numberposts' => '0'));?>
           <?php $tmpid = $post->ID ?>
           <?php if($courses): foreach($courses as $post): ?>

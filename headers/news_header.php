@@ -46,18 +46,18 @@
             </a>
             <ul class="sub_nav">
               <li class="sub_nav_item"><a target="_blank" href="/360view">易尔全景</a></li>
-              <li class="sub_nav_item"><a target="_blank" href="/category/news">易尔动态</a></li>
+              <li class="sub_nav_item"><a href="/category/news">易尔动态</a></li>
               <li class="sub_nav_item"><a href="/#yearn_contactus">联系我们</a></li>
             </ul>
           </li>
           <li class="item"> 
-            <a class="item_link" target="_blank" href="/kindergarten">幼儿园</a>
+            <a class="item_link" href="/kindergarten">幼儿园</a>
           </li>
           <li class="item"> 
-            <a class="item_link" target="_blank" href="/nprimary">小学部</a>
+            <a class="item_link"  href="/nprimary">小学部</a>
           </li>
           <li class="item"> 
-            <a class="item_link" target="_blank" href="/natatorium">游泳馆</a>
+            <a class="item_link"  href="/natatorium">游泳馆</a>
           </li>
           <li class="item"> 
             <a class="item_link" href="/admission">招生信息</a>

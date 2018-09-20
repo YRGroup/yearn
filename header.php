@@ -50,13 +50,13 @@
           </ul>
         </li>
         <li class="item"> 
-          <a class="item_link" target="_blank" href="/kindergarten">幼儿园</a>
+          <a class="item_link"  href="/kindergarten">幼儿园</a>
         </li>
         <li class="item"> 
-          <a class="item_link" target="_blank" href="/nprimary">小学部</a>
+          <a class="item_link" href="/nprimary">小学部</a>
         </li>
         <li class="item"> 
-          <a class="item_link" target="_blank" href="/natatorium">游泳馆</a>
+          <a class="item_link" href="/natatorium">游泳馆</a>
         </li>
         <li class="item"> 
           <a class="item_link" href="/admission">招生信息</a>

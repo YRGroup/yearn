@@ -240,7 +240,7 @@
 <!-- 导航 -->
 <div id="nav" class="nav">
   <ul>
-    <li><a href="/" target="_blank">
+    <li><a href="/">
       <i class="iconfont" style="font-size:16px;font-weight:600;">&#xe6bc;</i> 首页
     </a></li>
     <li data-menuanchors='page1' class="active"><a href="#page1">关于我们</a></li>

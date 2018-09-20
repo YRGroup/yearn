@@ -1,14 +1,15 @@
+//小程序页面适配
+if (getQueryString('weapp') == 1) {
+  weapp_fit_ui();
+  // weapp_fit_video();
+}
+
 AOS.init();
 var skrollr;
-
 //只有pc端初始化视差滚动
 function initSkrollr() {
   if (!/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
     skrollr = skrollr.init();
-    // setTimeout(() => {
-    //   document.body.style.height="auto";
-    // }, 20);
-
   }
 }
 
@@ -245,16 +246,20 @@ $('.tabs .tab').click(function () {
 })
 
 // initSkrollr();
-//小程序页面 隐藏标题
+
 function getQueryString(name) {
   var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
   var r = window.location.search.substr(1).match(reg);
   if (r != null) return unescape(r[2]);
   return null;
 }
-
-if(getQueryString('weapp')==1){
+//适配导航栏
+function weapp_fit_ui() {
   $('.yearn_header_mobile').hide();
-  $('body').css('padding',0);
-  $('.detailBg').css('paddingTop',0)
+  $('body').css('padding', 0);
+  $('.detailBg').css('paddingTop', 0)
+}
+//适配新闻页，移除iframe视频
+function weapp_fit_video() {
+  $('.bp-video').remove();
 }

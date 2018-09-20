@@ -10,7 +10,7 @@
       <li class="item col-md-3 col-sm-6 nopadding">
         <a class="link" 
         href="<?php the_permalink(); ?>" 
-        target="_blank" title="<?php the_title();?>">
+        title="<?php the_title();?>">
           <h4><?php the_time('Y-n-j');?></h4>
           <h5><?php the_title();?></h5>
           <div class="line"></div>
