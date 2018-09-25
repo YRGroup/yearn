@@ -10,8 +10,6 @@
   // echo get_query_var('cat') ;
 
 ?>
-
-
 <section class="page_content" >
   <section class="news_banner">
     <!-- <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/prim_bg10.jpg" alt="banner"> -->

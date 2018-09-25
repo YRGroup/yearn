@@ -4,6 +4,6 @@
   </div>
   <div class="video_content">
     <!-- <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/becoming.png" alt=""> -->
-    <i class="iconfont playVideo" data-src="http://yr-zhxy.oss-cn-beijing.aliyuncs.com/YRVideo/yearn/becomingwhoyouare.mp4">&#xea02;</i>
+    <i class="iconfont playVideo" data-src="//yr-zhxy.oss-cn-beijing.aliyuncs.com/YRVideo/yearn/becomingwhoyouare.mp4">&#xea02;</i>
   </div>
 </section> 

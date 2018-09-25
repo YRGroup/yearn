@@ -5,7 +5,7 @@
   
 		
 			
-     //   $data = file_get_contents($url, false, $context);
+  //   $data = file_get_contents($url, false, $context);
   //  echo file_get_contents('https://s.yearn.com/', false, $context);
     get_header(); 
     get_template_part('templates/index_banner');
@@ -25,8 +25,6 @@
   </section>
   <?php
 
-  
-   
     // get_template_part('templates/index_park');
     get_template_part('templates/bg_video');
     get_template_part('templates/index_news');

@@ -18,13 +18,13 @@ echo get_query_var('cat');
         ) );?>
         </div>
     <?php endwhile; ?>
-        <div class="comments">
+        <!-- <div class="comments">
           <?php 
-            if ( comments_open() || get_comments_number() ) :
-                comments_template();
-              endif;
+            // if ( comments_open() || get_comments_number() ) :
+            //     comments_template();
+            //   endif;
           ?>
-        </div>
+        </div> -->
     </div>
   </div>
   </div>
